@@ -19,7 +19,20 @@ body {
   background: var(--background-color);
   color: var(--secondary-color);
   line-height: 1.6;
+
+  min-height: 100vh;       /* occupe toute la hauteur de l’écran */
+  display: flex;
+  flex-direction: column;  /* structure en colonne : header, main, footer */
 }
+
+main {
+  flex: 1;                 /* prend tout l’espace disponible */
+}
+
+footer {
+  margin-top: auto;        /* pousse le footer en bas */
+}
+
 
 /* Header */
 header {
